@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech', sans-serif;
+}
+
+body {
+    background-color: rgb(224, 228, 243);
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    color: aliceblue;
+}
+
+header {
+    background-color: rgba(6, 104, 37, 0.755);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header li {
+    list-style: none;
+    font-size: 1.2em;
+    padding: 2% 0;
+}
+
+header h1 {
+    font-size: 2.3em;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#sobre .container,
+#produtos .container {
+    display: block;
+    color: rgb(40, 38, 38);
+}
+
+#sobre img,
+#produtos img {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#sobre h2,
+#produtos h2 {
+    width: 100%;
+    margin: 1em 0;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.437);
+    color: rgba(6, 104, 37, 0.755);
+}
+
+#produtos a{
+    text-decoration: none;
+    color: rgb(40, 38, 38);
+}
+
+#produtos h3,
+#produtos li {
+    padding: 0.5em 0;
+}
+
+#produtos li {
+    list-style: none;
+}
+
+#produtos button {
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
+    background-color:  rgba(6, 104, 37, 0.755);
+    border: none;
+    border-radius: 0.5em;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header .container {
+            padding: 1em;
+        }
+
+    #produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 100%;
+    }
+
+    header li {
+        display: inline;
+        margin-left: 3em;
+    }
+       
+    .container {
+        max-width: 1024px;
+    }
+
+    header .container {
+        padding: 0.5em;
+        
+    }
+
+    #sobre .container{
+        display: flex;
+        align-items: self-start;
+    } 
+
+    #sobre .container div {
+        margin-left: 2em;
+    }   
+
+    #produtos ul {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        column-gap: 2%;
+    }
+
+    #produtos li div {
+        height: 8em;
+    }
+}
+
+
+
